@@ -1,0 +1,11 @@
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-phone"></i>
+<i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-check"></i>
+<i class="fa-solid fa-thumbs-up"></i>
+<i class="fa-solid fa-thumbs-down"></i>

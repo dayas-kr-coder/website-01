@@ -24,15 +24,15 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
   </head>
-  <body class="light">
-    <nav class="navbar">
-      <div class="container">
+  <body class="dark">
+    <nav class="navbar width-full">
+      <div class="container width-full flex align-center">
         <div class="logo">
           <a href="index.html">
             <img src="images/final-black.png" alt="logo" />
           </a>
         </div>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav flex align-center list-style-none">
           <li class="nav-item text-md txt-hover">
             <a href="#">Home</a>
           </li>
@@ -54,7 +54,7 @@
     </nav>
     <!-- hero section start here -->
     <section class="hero-section">
-      <div class="container">
+      <div class="container flex">
         <div class="title-section">
           <h1 class="text-xxl">
             Creative Expressions: A Portfolio of Graphic Design Mastery
@@ -73,10 +73,12 @@
             </button>
           </div>
         </div>
-        <div class="hero-img-section"></div>
+        <div class="hero-img-section width-full">
+          <!-- image is on css -->
+        </div>
       </div>
     </section>
-    <!-- hero section ends here-->
+    <!-- hero section ends here -->
     <section class="section-2">
       <div class="container">
         <p class="text-md">
@@ -85,8 +87,113 @@
           collateral. Each project is a unique expression of visual
           storytelling, tailored to leave a lasting impact. Explore my work and
           let's bring your vision to life through design.
+          <a class="learn-M-links" href="#">Learn More.</a>
         </p>
       </div>
     </section>
+
+    <!-- Pricing section starts here -->
+    <section class="pricing-section width-full">
+      <div class="container width-full">
+        <h1 class="text-xxl blue text-center">Our Pricing & Plans</h1>
+        <div class="price-cards width-full">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+        <div class="price-details">
+          <p class="text-md price-note">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, amet?
+            Fuga ut saepe minus veritatis excepturi amet consequuntur tenetur
+            doloremque nostrum accusamus quaerat exercitationem distinctio,
+            mollitia eos, reiciendis ex deserunt!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+            soluta pariatur veniam eos reprehenderit aspernatur.
+            <a class="learn-M-links" href="#">Learn More.</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing section ends here -->
+
+    <!-- Footer starts here -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-aboout p-2">
+            <h4 class="text-md">ABOUT</h4>
+            <p class="text-xsm">
+              Welcome to my Graphic Design Portfolio. With a passion for
+              creativity and precision, I specialize in branding, web design,
+              and print collateral.
+            </p>
+            <div class="newsletter">
+              <input
+                class="newsletter-input"
+                type="text"
+                placeholder="Enter Email Address"
+              />
+              <button id="subscribe" class="btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="services p-2">
+            <h4 class="text-md">SERVICES</h4>
+            <ul>
+              <li>
+                <a href="#">Graphic Designing</a>
+              </li>
+              <li>
+                <a href="#">Poster Making</a>
+              </li>
+              <li>
+                <a href="#">Flex Printing & Designing</a>
+              </li>
+              <li>
+                <a href="#">Album Designing</a>
+              </li>
+              <li>
+                <a href="#">Logo Designing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="quick-links p-2">
+            <h4 class="text-md">QUICK LINKS</h4>
+            <ul>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Contribute</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact p-2">
+            <h4 class="text-md">CONTACT</h4>
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a></li>
+              <li><a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a></li>
+              <li><a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyrights">
+            Copyright &copy; 2023 All Rights Reserved by Texaz Designs.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
   </body>
 </html>
