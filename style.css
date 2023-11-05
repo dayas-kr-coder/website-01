@@ -88,10 +88,19 @@ body {
 
 .hero-section .container {
   padding: 2rem 0;
+  display: flex;
 }
-.hero-section .container p,
-.hero-section .container h1 {
-  width: 75%;
+
+.hero-section .container .title-section {
+  flex: 1;
+}
+
+.hero-section .container .hero-img-section {
+  background-color: red;
+  width: 100%;
+  background: url(./images/hero-image.png);
+  background-size: cover;
+  flex: 1;
 }
 
 .section-2 {
