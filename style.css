@@ -8,6 +8,7 @@
   --primary-color: #4891ff;
   --light-color: #f4f4f6;
   --dark-color: #111;
+  --profile-size: 50px;
 }
 
 body {
@@ -30,17 +31,20 @@ body {
   padding: 0.75rem 0;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: hsl(0, 0%, 98%);
+  border: 1px solid #fff;
+  box-shadow: rgba(103, 103, 124, 0.2) 0px 7px 29px 0px;
 }
 
 .navbar .logo img {
   height: 40px;
-  margin-left:  25px;
+  margin-left: 25px;
 }
 
 .navbar .navbar-nav {
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
 
 .navbar .navbar-nav a {
@@ -57,14 +61,43 @@ body {
   color: var(--dark-color);
 }
 
-.navbar .navbar-nav .login a:hover{
-opacity: 0.8;
+.navbar .navbar-nav .login a:hover {
+  opacity: 0.8;
 }
 
-
 .navbar .navbar-nav .login a i {
-  margin-right: 10px;
   color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-item {
+  margin: 0;
+}
+
+.profile {
+  overflow: hidden;
+  height: var(--profile-size);
+  width: var(--profile-size);
+  margin-right: 25px;
+  border-radius: 50%;
+  outline: 3px solid #ffffff;
+}
+
+.profile img {
+  height: var(--profile-size);
+}
+
+.hero-section .container {
+  padding: 2rem 0;
+}
+.hero-section .container p,
+.hero-section .container h1 {
+  width: 75%;
+}
+
+.section-2 {
+  color: #fff;
+  background-color: var(--dark-color);
+  padding: 2rem 0;
 }
 
 /* Utility Classes */
@@ -152,6 +185,18 @@ opacity: 0.8;
 
 .text-center {
   text-align: center;
+}
+
+/* margin */
+.mr-1 {
+  margin-right: 5px;
+}
+.mr-2 {
+  margin-right: 15px;
+}
+
+.display-none {
+  display: none;
 }
 
 .txt-hover a:hover {
