@@ -5,15 +5,3 @@ login.addEventListener('click', () => {
   <img src="./images/dayas-kr.jpg" alt="" />
 </div>`;
 });
-
-let a = `
-
-
-
-
-
-
-
-
-
-`

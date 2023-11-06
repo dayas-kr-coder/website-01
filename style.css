@@ -65,6 +65,12 @@ body {
   margin: 0;
 }
 
+.navbar i {
+  display: none;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
 .profile {
   overflow: hidden;
   height: var(--profile-size);
@@ -79,11 +85,9 @@ body {
 }
 
 .hero-section .container {
+  display: flex;
+  width: 100%;
   padding: 2rem 0;
-}
-.hero-section .container p,
-.hero-section .container h1 {
-  /* color: var(--txt-color); */
 }
 
 .hero-section .container .title-section {
@@ -91,10 +95,12 @@ body {
 }
 
 .hero-section .container .hero-img-section {
-  background-color: red;
-  background: url(./images/hero-image.png);
-  background-size: cover;
+  /* background-color: red; */
   flex: 1;
+}
+
+.hero-section .container .hero-img-section img {
+  width: 100%;
 }
 
 .section-2 {
@@ -159,19 +165,6 @@ body {
 .pricing-section .price-details p {
   text-align: center;
 }
-
-/*! remove this*/
-.pricing-section .price-cards .card::before {
-  content: 'Pricing table not completed!';
-  top: 50%;
-  left: 5%;
-  color: rgba(255, 114, 114, 0.794);
-  font-weight: 600;
-  font-size: 2rem;
-  position: absolute;
-  text-align: center;
-}
-/*! remove this*/
 
 /* footer */
 footer {
@@ -422,14 +415,70 @@ footer .footer-bottom .copyrights {
 }
 
 /* Media Queries */
+@media (max-width: 1400px) {
+  .hero-section .container {
+    padding: 1.5rem 2.5rem;
+  }
+  .hero-section .container .title-section {
+    flex: 1.2;
+  }
+}
 @media (max-width: 960px) {
-  /* not completed! */
+  .text-xxl {
+    font-size: 2rem;
+  }
+  .text-md {
+    font-size: 1rem;
+  }
+  .hero-section .container {
+    padding: 1.5rem 2.5rem;
+  }
+  .hero-section .container .title-section {
+    flex: 1.2;
+  }
+  .hero-section .container {
+    flex-direction: column;
+  }
+  .hero-section .container .hero-img-section {
+    display: flex;
+    justify-content: end;
+  }
+  .hero-section .container .hero-img-section img {
+    width: 600px;
+  }
 }
 @media (max-width: 670px) {
-  /* not completed! */
+  .pricing-section .price-cards {
+    flex-direction: column;
+  }
+  .pricing-section .price-cards .card {
+    width: 70%;
+    margin: 0.5rem 0;
+  }
+  footer {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
-  /* not completed! */
+  .hero-section .container {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .hero-section .container .hero-img-section img {
+    width: 350px;
+  }
+  .pricing-section .price-cards .card {
+    width: 100%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .pricing-section .text-xxl h1 {
+    font-size: 1rem;
+  }
+  .navbar i {
+    display: block;
+  }
 }
 
 /*! Not mobile responsive */
