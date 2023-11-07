@@ -50,7 +50,11 @@
             </div>
           </li>
         </ul>
-        <i class="fa-solid fa-bars"></i>
+        <div class="burger">
+          <div class="line1 line"></div>
+          <div class="line2 line"></div>
+          <div class="line3 line"></div>
+        </div>
       </div>
     </nav>
     <!-- hero section start here -->
@@ -96,11 +100,13 @@
     <!-- Pricing section starts here -->
     <section class="pricing-section width-full">
       <div class="container width-full">
-        <h1 class="text-xxl blue text-center">Our Pricing & Plans</h1>
+        <h1 id="promise" class="text-xxl blue text-center">
+          "We will deliver what we promised"
+        </h1>
         <div class="price-cards width-full">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+          <div class="card card1"></div>
+          <div class="card card2"></div>
+          <div class="card card3"></div>
         </div>
         <div class="price-details">
           <p class="text-md price-note">
@@ -123,12 +129,13 @@
     <footer>
       <div class="container">
         <div class="footer-top">
-          <div class="footer-aboout p-2">
+          <div class="footer-about p-1">
             <h4 class="text-md">ABOUT</h4>
             <p class="text-xsm">
               Welcome to my Graphic Design Portfolio. With a passion for
               creativity and precision, I specialize in branding, web design,
-              and print collateral.
+              and print collateral. Each project is a unique expression of
+              visual storytelling, tailored to leave a lasting impact.
             </p>
             <div class="newsletter">
               <input
@@ -136,68 +143,73 @@
                 type="text"
                 placeholder="Enter Email Address"
               />
-              <button id="subscribe" class="btn">Subscribe</button>
+              <button id="subscribe" class="hover">Subscribe</button>
             </div>
           </div>
-          <div class="services p-2">
-            <h4 class="text-md">SERVICES</h4>
-            <ul>
-              <li>
-                <a href="#">Graphic Designing</a>
-              </li>
-              <li>
-                <a href="#">Poster Making</a>
-              </li>
-              <li>
-                <a href="#">Flex Printing & Designing</a>
-              </li>
-              <li>
-                <a href="#">Album Designing</a>
-              </li>
-              <li>
-                <a href="#">Logo Designing</a>
-              </li>
-            </ul>
-          </div>
-          <div class="quick-links p-2">
-            <h4 class="text-md">QUICK LINKS</h4>
-            <ul>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-              <li>
-                <a href="#">Contribute</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#">Sitemap</a>
-              </li>
-            </ul>
-          </div>
-          <div class="contact p-2">
-            <h4 class="text-md">CONTACT</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a>
-              </li>
-            </ul>
+
+          <div class="footer-nav p-1">
+            <div class="services p-1">
+              <h4 class="text-md">SERVICES</h4>
+              <ul>
+                <li>
+                  <a href="#">Graphic Designing</a>
+                </li>
+                <li>
+                  <a href="#">Poster Making</a>
+                </li>
+                <li>
+                  <a href="#">Flex Printing & Designing</a>
+                </li>
+                <li>
+                  <a href="#">Album Designing</a>
+                </li>
+                <li>
+                  <a href="#">Logo Designing</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="quick-links p-1">
+              <h4 class="text-md">QUICK LINKS</h4>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Contribute</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact p-1">
+              <h4 class="text-md">CONTACT</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-phone"></i> 862-652-7939</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="copyrights">
+        <div class="footer-bottom flex justify-center p-1">
+          <p class="copyrights">
             Copyright &copy; 2023 All Rights Reserved by Texaz Designs.
-          </div>
+          </p>
         </div>
       </div>
     </footer>
