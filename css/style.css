@@ -13,32 +13,34 @@
   --profile-size: 50px;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background: #fff;
   overflow-x: hidden;
 }
 
+header {
+  width: 100%;
+  padding: 0.75rem 0;
+  background-color: hsl(0, 0%, 98%);
+  /* border: 1px solid #fff; */
+  /* box-shadow: rgba(103, 103, 124, 0.2) 0px 7px 29px 0px; */
+}
+
 .navbar {
   position: relative;
-  height: 100px;
 }
 
 .navbar .container {
   justify-content: space-between;
-  padding: 0.75rem 0;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  background-color: hsl(0, 0%, 98%);
-  border: 1px solid #fff;
-  box-shadow: rgba(103, 103, 124, 0.2) 0px 7px 29px 0px;
 }
 
 .navbar .logo img {
@@ -82,19 +84,6 @@ body {
   margin-right: 1.5rem;
 }
 
-.profile {
-  overflow: hidden;
-  height: var(--profile-size);
-  width: var(--profile-size);
-  margin-right: 25px;
-  border-radius: 50%;
-  outline: 3px solid #ffffff;
-}
-
-.profile img {
-  height: var(--profile-size);
-}
-
 .hero-section .container {
   display: flex;
   width: 100%;
@@ -106,7 +95,6 @@ body {
 }
 
 .hero-section .container .hero-img-section {
-  /* background-color: red; */
   flex: 1;
 }
 
@@ -157,17 +145,17 @@ body {
 }
 
 .card:nth-child(1) {
-  background: url(./images/card-image-1.jpg);
+  background: url(../images/card-image-1.jpg);
   background-size: contain;
   background-position: center;
 }
 .card:nth-child(2) {
-  background: url(./images/card-image-2.jpg);
+  background: url(../images/card-image-2.jpg);
   background-size: contain;
   background-position: center;
 }
 .card:nth-child(3) {
-  background: url(./images/card-image-3.jpg);
+  background: url(../images/card-image-3.jpg);
   background-size: contain;
   background-position: center;
 }
@@ -196,6 +184,7 @@ body {
 /* Handburger menu */
 .burger {
   display: none;
+  cursor: pointer;
 }
 
 .burger div {
@@ -579,10 +568,4 @@ footer .footer-bottom {
   .pricing-section .text-xxl h1 {
     font-size: 1rem;
   }
-
-  footer .quick-links {
-    /* background-color: red; */
-  }
 }
-
-/*! Not mobile responsive */

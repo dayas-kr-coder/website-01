@@ -21,42 +21,40 @@
       referrerpolicy="no-referrer"
     />
     <title>Home Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/app.js"></script>
   </head>
   <body class="dark">
-    <nav class="navbar">
-      <div class="container width-full flex align-center">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/final-black.png" alt="logo" />
-          </a>
+    <header>
+      <nav class="navbar">
+        <div class="container width-full flex align-center">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/final-black.png" alt="logo" />
+            </a>
+          </div>
+          <ul class="navbar-nav flex align-center list-style-none">
+            <li class="nav-item text-md txt-hover">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-item text-md txt-hover">
+              <a href="#">about us</a>
+            </li>
+            <li class="nav-item text-md txt-hover">
+              <a href="#">services</a>
+            </li>
+            <li class="nav-item text-md login">
+              <a href="#"><i class="fa-solid fa-user mr-2"></i>login</a>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
         </div>
-        <ul class="navbar-nav flex align-center list-style-none">
-          <li class="nav-item text-md txt-hover">
-            <a href="#">Home</a>
-          </li>
-          <li class="nav-item text-md txt-hover">
-            <a href="#">about us</a>
-          </li>
-          <li class="nav-item text-md txt-hover">
-            <a href="#">services</a>
-          </li>
-          <li class="nav-item text-md login">
-            <a href="#"><i class="fa-solid fa-user mr-2"></i>login</a>
-            <!-- profile -->
-            <div class="profile display-none">
-              <img src="./images/dayas-kr.jpg" alt="" />
-            </div>
-          </li>
-        </ul>
-        <div class="burger">
-          <div class="line1 line"></div>
-          <div class="line2 line"></div>
-          <div class="line3 line"></div>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- hero section start here -->
     <section class="hero-section">
       <div class="container flex">
