@@ -19,20 +19,36 @@ body {
   overflow-x: hidden;
 }
 
+.light-mode {
+  --dark-color: #111;
+  --light-color: #f8f8f8;
+}
+
+.dark-mode {
+  --dark-color: #f8f8f8;
+  --light-color: #111;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: #fff;
+  background-color: var(--light-color);
+  color: var(--dark-color);
   overflow-x: hidden;
 }
 
 header {
   width: 100%;
   padding: 0.75rem 0;
-  background-color: hsl(0, 0%, 98%);
+  background-color: var(--light-color);
+  color: var(--dark-color);
   /* border: 1px solid #fff; */
   /* box-shadow: rgba(103, 103, 124, 0.2) 0px 7px 29px 0px; */
+}
+
+.dark-mode header {
+  background-color: #222222;
 }
 
 .navbar {
@@ -48,6 +64,10 @@ header {
   margin-left: 25px;
 }
 
+.dark-mode .navbar .logo img{
+  filter: invert();
+}
+
 .navbar .navbar-nav a {
   text-decoration: none;
   margin: 0 25px;
@@ -55,11 +75,10 @@ header {
   color: var(--dark-color);
   font-family: Arial;
   font-weight: 600;
-  color: var(--dark-grey);
 }
 
 .navbar .navbar-nav .login a {
-  background-color: #efefef;
+  background-color: var(--light-grey);
   padding: 5px 10px;
   border-radius: 8px;
   color: var(--dark-color);
@@ -83,6 +102,34 @@ header {
   font-size: 2rem;
   margin-right: 1.5rem;
 }
+
+/* theme */
+#themes {
+  display: inline-block;
+  cursor: pointer;
+}
+
+svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #626262;
+}
+
+.dark-mode #themes svg,
+.light-mode #themes svg {
+  display: none;
+  cursor: pointer;
+}
+
+.dark-mode #themes svg.sun {
+  display: block;
+}
+
+.light-mode #themes svg.moon {
+  display: block;
+}
+
+/* theme */
 
 .hero-section .container {
   display: flex;
@@ -273,6 +320,11 @@ footer .footer-bottom {
   cursor: pointer;
   text-align: center;
   transition: 0.5s;
+}
+
+.dark-mode .btn {
+  background-color: var(--light-grey);
+  color: var(--dark-color);
 }
 
 .btn:hover {
